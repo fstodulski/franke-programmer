@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { ExternalLink } from '@steeze-ui/remix-icons';
+  import { Icon } from '@steeze-ui/svelte-icon';
+
   import type { Project } from '../../containeres/Projects/projects';
   import { Composition } from '../../containeres/Projects/projects';
   import DoubleComposition from './components/DoubleComposition.svelte';
@@ -11,20 +14,29 @@
 
 <div
   style="background-color: {project.backgroundColor};"
-  class="project-card flex w-full flex-col overflow-hidden rounded-xl pt-3 bg-[{project.backgroundColor}] gap-6"
+  class="project-card flex w-full flex-col overflow-hidden rounded-xl bg-[{project.backgroundColor}] gap-6"
 >
-  <a href={project.link.href} aria-label={project.link.ariaLabel}>
-    <article class="flex flex-col gap-6 px-5">
-      <div class="flex w-full">
-        <h2 class="tex-base text-base-white font-syne">{project.title}</h2>
+  <article class="flex flex-col">
+    <div class="flex w-full justify-between">
+      <h2 class="tex-base text-base-white font-syne pl-5 pt-4">{project.title}</h2>
+
+      <div class="bg-slate-(lighten)-slate-900 rounded-bl-xl px-6 py-4">
+        <a href={project.link.href} class="font-inter text-slate-500">
+          <span
+            style="color: {project.fontColor}; border-color: {project.fontColor};"
+            class="flex items-center gap-2 rounded-full border px-2 py-0.5"
+          >
+            Open link <Icon src={ExternalLink} size="14px" />
+          </span>
+        </a>
       </div>
-      <ul class="list-disc pl-4" style="color: {project.fontColor}">
-        {#each project.points as point}
-          <li>{point}</li>
-        {/each}
-      </ul>
-    </article>
-  </a>
+    </div>
+    <ul class="list-disc px-10" style="color: {project.fontColor}">
+      {#each project.points as point}
+        <li>{point}</li>
+      {/each}
+    </ul>
+  </article>
 
   <div class="flex w-full">
     {#if project.composition === Composition.Triple}
@@ -44,3 +56,6 @@
     {/if}
   </div>
 </div>
+
+<style lang="scss">
+</style>

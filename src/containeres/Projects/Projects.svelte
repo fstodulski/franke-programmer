@@ -10,7 +10,7 @@
 
   {#if index === 0}
     <div
-      class="bg-slate-(lighten)-slate-900 text-slate-slate-500 font-syne col-span-2 flex w-full items-center gap-6 rounded-full py-4 uppercase"
+      class="bg-slate-(lighten)-slate-900 text-slate-slate-500 font-syne flex w-full items-center gap-6 rounded-full py-4 uppercase md:col-span-2"
     >
       <MarqueeTextWidget>
         {#each TECH_STACK as tech}
