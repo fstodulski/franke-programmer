@@ -38,7 +38,7 @@
     </ul>
   </article>
 
-  <div class="flex w-full">
+  <div class="flex h-full w-full">
     {#if project.composition === Composition.Triple}
       <TripleComposition assets={project.assets} />
     {/if}

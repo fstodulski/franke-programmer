@@ -12,7 +12,7 @@
 
 <div class="relative flex w-full items-center justify-center">
   {#each assets as asset, index}
-    <figure class=" flex items-center justify-center overflow-hidden {stylesByIndex[index]}">
+    <figure class="flex h-full items-center justify-center overflow-hidden {stylesByIndex[index]}">
       <img
         height={asset.height}
         width={asset.width}
