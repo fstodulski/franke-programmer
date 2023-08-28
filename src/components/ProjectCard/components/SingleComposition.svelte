@@ -11,7 +11,7 @@
         height={asset.height}
         width={asset.width}
         alt={asset.alt}
-        class="mx-auto max-w-[90%] rounded-md drop-shadow-xl"
+        class="mx-auto aspect-auto max-w-[90%] rounded-md drop-shadow-xl"
         src={asset.url}
       />
     </figure>

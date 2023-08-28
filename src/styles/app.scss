@@ -7,3 +7,7 @@
 html, body {
   @apply bg-base-black;
 }
+
+.page-content {
+  @apply max-w-screen-xl mx-auto;
+}

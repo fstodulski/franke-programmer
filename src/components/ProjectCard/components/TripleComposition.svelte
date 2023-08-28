@@ -17,7 +17,7 @@
         height={asset.height}
         width={asset.width}
         alt={asset.alt}
-        class="max-w-[120px] md:max-w-[180px]"
+        class="aspect-auto max-w-[120px] md:max-w-[180px]"
         src={asset.url}
       />
     </figure>

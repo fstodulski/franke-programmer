@@ -12,7 +12,7 @@
         height={asset.height}
         width={asset.width}
         alt={asset.alt}
-        class="w-full rounded-md shadow-md drop-shadow-2xl {asset.cssClass}"
+        class="aspect-auto w-full rounded-md shadow-md drop-shadow-2xl {asset.cssClass}"
         src={asset.url}
       />
     </figure>

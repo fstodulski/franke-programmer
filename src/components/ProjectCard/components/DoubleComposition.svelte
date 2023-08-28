@@ -13,7 +13,7 @@
   {#each assets as asset, index}
     <figure class="flex items-center justify-center overflow-hidden {stylesByIndex[index]}">
       <img
-        class="w-full"
+        class="aspect-auto w-full"
         src={asset.url}
         height={asset.height}
         width={asset.width}
