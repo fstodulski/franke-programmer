@@ -102,6 +102,26 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    title: 'kubamikolajczyk.pl',
+    points: ['Front'],
+    link: {
+      href: 'https://www.kubamikolajczyk.pl',
+      alt: 'Flip.shop',
+      ariaLabel: 'Flip.shop - link to the website'
+    },
+    backgroundColor: '#4b47ff',
+    fontColor: '#A3B5FA',
+    composition: Composition.Single,
+    assets: [
+      {
+        url: '/assets/kubu/kubu.webp',
+        alt: 'Flip.shop - website screenshot',
+        width: 1440,
+        height: 1071
+      }
+    ]
+  },
+  {
     title: 'Givt',
     points: ['Frontend', 'Dynamic Forms'],
     link: {
@@ -147,26 +167,7 @@ export const PROJECTS: Project[] = [
       }
     ]
   },
-  {
-    title: 'kubamikolajczyk.pl',
-    points: ['Front'],
-    link: {
-      href: 'https://www.kubamikolajczyk.pl',
-      alt: 'Flip.shop',
-      ariaLabel: 'Flip.shop - link to the website'
-    },
-    backgroundColor: '#4b47ff',
-    fontColor: '#A3B5FA',
-    composition: Composition.Single,
-    assets: [
-      {
-        url: '/assets/kubu/kubu.webp',
-        alt: 'Flip.shop - website screenshot',
-        width: 1440,
-        height: 1071
-      }
-    ]
-  },
+
   {
     title: 'Retail Me Not',
     points: ['Front + Backend', 'Refactoring', 'Maintenance'],
