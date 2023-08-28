@@ -1,0 +1,7 @@
+.link {
+  @apply text-slate-50 flex py-3 px-4 rounded-full bg-transparent items-center gap-2;
+
+  &:hover {
+    @apply bg-slate-(lighten)-slate-700;
+  }
+}

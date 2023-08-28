@@ -1,0 +1,9 @@
+@import "_buttons.scss";
+@import "_links.scss";
+@import "_pill.scss";
+@import "_typography.scss";
+@import "_project-card.scss";
+
+html, body {
+  @apply bg-base-black;
+}
