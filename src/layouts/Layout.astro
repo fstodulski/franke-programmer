@@ -2,31 +2,76 @@
 import '../styles/app.scss';
 import Header from '../components/Header/Header.astro';
 
-interface Props {
+type Meta = {
   title: string;
-}
+  description: string;
+  url: string;
+  image: string;
+};
 
-const { title } = Astro.props;
+const META: Meta = {
+  title: 'Franciszek Stodulski - Software developer',
+  description:
+    'Franciszek Stodulski - Software developer with 8+ years of experience with Web Applications.',
+  image: '/meta.webp',
+  url: 'https://franciszekstodulski.dev'
+};
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content={META.description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#020617" />
+
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Syne:wght@600;700&display=swap"
-      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@600;700&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
-    <title>{title}</title>
+    <meta name="title" content={META.title} />
+    <meta name="description" content={META.description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={META.url} />
+    <meta property="og:title" content={META.title} />
+    <meta property="og:description" content={META.description} />
+    <meta property="og:image" content={META.image} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={META.url} />
+    <meta property="twitter:title" content={META.title} />
+    <meta property="twitter:description" content={META.description} />
+    <meta property="twitter:image" content={META.image} />
+    <title>{META.title}</title>
   </head>
   <body>
     <Header />
     <slot />
   </body>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Franciszek",
+      "url": "https://franciszekstodulski.dev",
+      "image": "",
+      "sameAs": [
+        "https://www.linkedin.com/in/%F0%9F%91%8B-franciszek-stodulski-50b771101",
+        "https://franciszekstodulski.dev"
+      ],
+      "jobTitle": "Software developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "FlipShop"
+      }
+    }
+  </script>
 </html>
