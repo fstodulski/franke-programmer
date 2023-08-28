@@ -12,7 +12,13 @@
 <div class="relative flex w-full px-5">
   {#each assets as asset, index}
     <figure class="flex items-center justify-center overflow-hidden {stylesByIndex[index]}">
-      <img class="w-full" src={asset.url} alt="" />
+      <img
+        class="w-full"
+        src={asset.url}
+        height={asset.height}
+        width={asset.width}
+        alt={asset.alt}
+      />
     </figure>
   {/each}
 </div>

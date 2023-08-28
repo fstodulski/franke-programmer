@@ -62,20 +62,20 @@ export const PROJECTS: Project[] = [
       {
         url: '/assets/flip-shop/Flip-Shop-2.webp',
         alt: 'Flip.shop - website screenshot',
-        width: 1400,
-        height: 1400
+        width: 438,
+        height: 798
       },
       {
         url: '/assets/flip-shop/Flip-Shop-1.webp',
         alt: 'Flip.shop - website screenshot',
-        width: 1400,
-        height: 1400
+        width: 438,
+        height: 798
       },
       {
         url: '/assets/flip-shop/Flip-Shop-3.webp',
         alt: 'Flip.shop - website screenshot',
-        width: 1400,
-        height: 1400
+        width: 438,
+        height: 798
       }
     ]
   },
@@ -95,8 +95,8 @@ export const PROJECTS: Project[] = [
       {
         url: '/assets/tiny-heroes/tiny-heroes.webp',
         alt: 'Flip.shop - website screenshot',
-        width: 1400,
-        height: 1400,
+        width: 1440,
+        height: 1415,
         cssClass: 'border-green-100'
       }
     ]
@@ -116,8 +116,8 @@ export const PROJECTS: Project[] = [
       {
         url: '/assets/givt/givt.webp',
         alt: 'GIVT - website screenshot',
-        width: 1400,
-        height: 1400
+        width: 1920,
+        height: 900
       }
     ]
   },
@@ -136,14 +136,14 @@ export const PROJECTS: Project[] = [
       {
         url: '/assets/farm-rent/farm-rent-2.webp',
         alt: 'Farn Rent A Car - website screenshot',
-        width: 1400,
-        height: 1400
+        width: 438,
+        height: 798
       },
       {
         url: '/assets/farm-rent/farm-rent-1.webp',
         alt: 'Farm Rent A Car - second website screenshot',
-        width: 1400,
-        height: 1400
+        width: 438,
+        height: 798
       }
     ]
   },
@@ -162,8 +162,8 @@ export const PROJECTS: Project[] = [
       {
         url: '/assets/kubu/kubu.webp',
         alt: 'Flip.shop - website screenshot',
-        width: 1400,
-        height: 1400
+        width: 1440,
+        height: 1071
       }
     ]
   },
@@ -183,8 +183,8 @@ export const PROJECTS: Project[] = [
       {
         url: '/assets/retail-me-not/retail-me-not.webp',
         alt: 'Retail Me Not - website screenshot',
-        width: 1400,
-        height: 1400
+        width: 4320,
+        height: 3762
       }
     ]
   },
@@ -204,8 +204,8 @@ export const PROJECTS: Project[] = [
       {
         url: '/assets/h&l/h&l.webp',
         alt: 'Home & Living - website screenshot',
-        width: 1400,
-        height: 1400
+        width: 1280,
+        height: 811
       }
     ]
   }

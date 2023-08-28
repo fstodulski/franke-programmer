@@ -9,9 +9,11 @@
   {#each assets as asset, index}
     <figure class="flex translate-y-2 -rotate-6">
       <img
+        height={asset.height}
+        width={asset.width}
+        alt={asset.alt}
         class="w-full rounded-md shadow-md drop-shadow-2xl {asset.cssClass}"
         src={asset.url}
-        alt=""
       />
     </figure>
   {/each}
