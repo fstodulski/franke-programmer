@@ -84,7 +84,7 @@ export const PROJECTS: Project[] = [
     points: ['Google Cloud', 'Front + Backend', 'NFT Smart Contracts'],
     height: 420,
     link: {
-      href: 'https://www.tiny-heroes.io/',
+      href: 'https://tiny-heroes-svelte.vercel.app',
       alt: 'Tiny Heroes',
       ariaLabel: 'Tiny Heroes - link to the website'
     },
