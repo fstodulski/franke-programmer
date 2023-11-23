@@ -55,8 +55,8 @@ export const PROJECTS: Project[] = [
       alt: 'Flip.shop',
       ariaLabel: 'Flip.shop - link to the website'
     },
-    backgroundColor: '#c964d7',
-    fontColor: '#EFBAFC',
+    backgroundColor: '#0be094',
+    fontColor: '#ffffff',
     composition: Composition.Triple,
     assets: [
       {
