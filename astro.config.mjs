@@ -14,7 +14,16 @@ export default defineConfig({
     sitemap(),
     partytown({
       config: {
-        forward: ['dataLayer.push']
+        forward: ['dataLayer.push'],
+        resolveUrl: (url) => {
+          const PROXY_MAP = {
+            'analytics.tiktok.com': 'd2bfcjczgrpfbj.cloudfront.net', // tiktok has to have proxy
+          };
+
+          url.hostname = PROXY_MAP[url.hostname] || url.hostname;
+
+          return url;
+        }
       }
     })
   ],
