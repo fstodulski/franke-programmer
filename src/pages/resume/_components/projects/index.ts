@@ -3,6 +3,7 @@ export { default as ResumeProjects } from './root.svelte';
 export const PROJECTS = [
   {
     name: '🛍️ Flip Shop',
+    type: 'contract',
     role: 'Team Lead & Frontend Developer',
     technologies: ['Next.js', 'Astro', 'SvelteKit', 'Angular', 'TailwindCSS', 'Shadcn', '...other'],
     description: [
@@ -21,7 +22,8 @@ export const PROJECTS = [
     ]
   },
   {
-    name: '🧮 PQMsa - (Freelance)',
+    name: '🧮 PQ-MSA',
+    type: 'freelance',
     role: 'Software Developer (Front, Back, Devops)',
     technologies: [
       'SvelteKit',
@@ -50,7 +52,8 @@ export const PROJECTS = [
     ]
   },
   {
-    name: '🏎️ FARM - Car Rental - (Freelance)',
+    name: '🏎️ FARM - Car Rental',
+    type: 'freelance',
     role: 'Software Developer (Front, Back, Devops)',
     technologies: [
       'SvelteKit',
@@ -70,7 +73,8 @@ export const PROJECTS = [
     ]
   },
   {
-    name: '⚔️ Tiny Heroes - (Side project)',
+    name: '⚔️ Tiny Heroes',
+    type: 'hobby',
     role: 'Software Developer (Front, Back, Devops, Web3)',
     technologies: ['SvelteKit', 'TypeScript', 'Tailwindcss', 'Solidity', 'Web3', 'Eth', '...other'],
     description: [
@@ -89,6 +93,7 @@ export const PROJECTS = [
   },
   {
     name: '☘️ Netguru',
+    type: 'contract',
     role: 'Team Lead & Frontend Developer + Consultant + Recruiter',
     technologies: ['Angular', 'Next.js', '...other'],
     description: [
@@ -116,10 +121,11 @@ export const PROJECTS = [
   },
   {
     name: '👨‍💻 SoftServe',
+    type: 'contract',
     role: 'Frontend Developer',
     technologies: ['Fligh.js', 'JavaScript', 'TypeScript', '...other'],
     description: [
-      `Maintanance e-commerce project written in fligh.js (twitter framework). Converting UMD to ES6 modules.`,
+      `Maintenance e-commerce project written in fligh.js (twitter framework). Converting UMD to ES6 modules.`,
       `Old project, lot of legacy code`,
       `Vegan technology`
     ],
@@ -132,10 +138,11 @@ export const PROJECTS = [
   },
   {
     name: '✈️ NetTeam Solutions - Givt',
+    type: 'contract',
     role: 'Angular Frontend Developer',
     technologies: ['Angular', 'NgRx', 'TypeScript', '...other'],
     description: [
-      `Create and maintanance new project built on Angular.`,
+      `Create and maintenance new project built on Angular.`,
       `Web application to collect clients data about late flight`,
       `Planning & consulting with client`
     ],
@@ -148,10 +155,11 @@ export const PROJECTS = [
   },
   {
     name: '👑 Podwysocki DESIGN',
+    type: 'contract',
     role: 'Frontend Developer',
     technologies: ['Angular.js', 'JavaScript', 'WordPress', 'TypeScript', '...other'],
     description: [
-      `Create and maintanance new project built on Angular.js. Implementing UI for the online shop with custom made beds.`,
+      `Create and maintenance new project built on Angular.js. Implementing UI for the online shop with custom made beds.`,
       `Cooperating closely with our design team. Cutting Photoshop layouts into HTML,CSS,JS.`
     ],
     links: [

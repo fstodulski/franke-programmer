@@ -8,11 +8,16 @@
   <BentoTitle>🖼️ Projects</BentoTitle>
 
   <ul class="mt-6 grid gap-2 text-primary-foreground print:mt-1">
-    {#each PROJECTS as { name, role, links, technologies, description }}
+    {#each PROJECTS as { name, role, links, type, technologies, description }}
       <li
         class="my-10 grid break-inside-avoid gap-4 first-of-type:my-0 first-of-type:mb-10 last-of-type:mb-0 print:mb-4 print:gap-1"
       >
         <span class="text-2xl font-bold print:text-sm">{name}</span>
+
+        <div class="grid print:flex print:items-center">
+          <span class="text-sm text-muted-foreground print:text-xs">Type:</span>
+          <BentoParagraph class="capitalize">{type}</BentoParagraph>
+        </div>
 
         <div class="grid print:flex print:items-center">
           <span class="text-sm text-muted-foreground print:text-xs">Role:</span>
