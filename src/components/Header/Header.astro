@@ -1,19 +1,33 @@
 ---
 import { Icon } from '@steeze-ui/svelte-icon';
 import { ExternalLink } from '@steeze-ui/remix-icons';
+
+const { pathname } = Astro.url;
+
+let isResume = pathname === '/resume';
 ---
 
 <header class="w-full p-4 container print:hidden">
   <nav class="w-full p-3 justify-between flex bg-slate-(lighten)-slate-900 rounded-xl">
-    <a
-      class="link"
-      target="_blank"
-      href="https://www.linkedin.com/in/%F0%9F%91%8B-franciszek-stodulski-50b771101/"
-      referrerpolicy="no-referrer"
-    >
-      Linkedin
-      <Icon src={ExternalLink} size="14px" />
-    </a>
+    <div class="flex gap-2">
+      {
+        isResume && (
+          <a class="link" href="/">
+            Go Back
+          </a>
+        )
+      }
+
+      <a
+        class="link hidden lg:block"
+        target="_blank"
+        href="https://www.linkedin.com/in/%F0%9F%91%8B-franciszek-stodulski-50b771101/"
+        referrerpolicy="no-referrer"
+      >
+        Linkedin
+        <Icon src={ExternalLink} size="14px" />
+      </a>
+    </div>
 
     <div class="flex gap-2">
       <a class="link" target="_blank" href="/resume"> Resume / CV </a>
