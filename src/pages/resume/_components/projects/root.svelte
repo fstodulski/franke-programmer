@@ -7,9 +7,9 @@
 <BentoCard class="row-span-4 items-start lg:col-span-4">
   <BentoTitle>🖼️ Projects</BentoTitle>
 
-  <ul class="mt-6 grid gap-2 text-primary-foreground print:mt-1">
+  <section class="mt-6 grid gap-2 text-primary-foreground print:mt-1">
     {#each PROJECTS as { name, role, links, type, technologies, description }}
-      <li
+      <div
         class="my-10 grid break-inside-avoid gap-4 first-of-type:my-0 first-of-type:mb-10 last-of-type:mb-0 print:mb-4 print:gap-1"
       >
         <span class="text-2xl font-bold print:text-sm">{name}</span>
@@ -56,9 +56,9 @@
             {/each}
           </BentoParagraph>
         </div>
-      </li>
+      </div>
 
       <div class="h-1 w-full bg-background/10 last-of-type:hidden"></div>
     {/each}
-  </ul>
+  </section>
 </BentoCard>
