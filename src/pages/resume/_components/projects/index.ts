@@ -66,6 +66,24 @@ export const PROJECTS = [
     ]
   },
   {
+    name: '⚔️ Tiny Heroes - (Side project)',
+    role: 'Software Developer (Front, Back, Devops, Web3)',
+    technologies: ['SvelteKit', 'TypeScript', 'Tailwindcss', 'Solidity', 'Web3', 'Eth', '...other'],
+    description: [
+      `Application built from ground up. `,
+      `Side project for NFTs`,
+      `Implemented smart contract in Solidity`,
+      `Integration UI with Metamask wallet`,
+      `Project Died`
+    ],
+    links: [
+      {
+        href: 'https://tiny-heroes-svelte.vercel.app',
+        label: 'Tiny Heroes'
+      }
+    ]
+  },
+  {
     name: '☘️ Netguru',
     role: 'Team Lead & Frontend Developer + Consultant + Recruiter',
     technologies: ['Angular', 'Next.js', '...other'],
@@ -85,7 +103,7 @@ export const PROJECTS = [
     ]
   },
   {
-    name: '☘️ SoftServe',
+    name: '👨‍💻 SoftServe',
     role: 'Frontend Developer',
     technologies: ['Fligh.js', 'JavaScript', 'TypeScript', '...other'],
     description: [
