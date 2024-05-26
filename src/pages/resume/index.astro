@@ -1,0 +1,21 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { HeroResume } from './_components/hero';
+import { BentoGrid } from '$components/bento';
+
+import { Skills } from './_components/skills';
+import { AboutMeResume } from 'src/pages/resume/_components/about-me';
+import { ResumeProjects } from 'src/pages/resume/_components/projects';
+import { ResumeContact } from 'src/pages/resume/_components/contact';
+---
+
+<Layout title="Franciszek Stodulski - Software Developer">
+  <HeroResume />
+
+  <BentoGrid class="container print:py-4 py-10 auto-rows-min">
+    <AboutMeResume />
+    <ResumeContact />
+    <Skills />
+    <ResumeProjects />
+  </BentoGrid></Layout
+>

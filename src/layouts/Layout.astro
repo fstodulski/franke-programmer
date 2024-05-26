@@ -1,5 +1,6 @@
 ---
 import '../styles/app.scss';
+import '../styles/app.pcss';
 import GTag from '../components/Analytics/GTag/GTag.astro';
 import GTM from '../components/Analytics/GTM/GTM.astro';
 import GTMNoScript from '../components/Analytics/GTMNoScript/GTMNoScript.astro';
@@ -63,7 +64,7 @@ const META: Meta = {
     <TikTok />
     <!-- End Google Tag Manager -->
   </head>
-  <body>
+  <body class="bg-transparent font-inter">
     <GTMNoScript />
     <Header />
     <slot />

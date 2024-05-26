@@ -1,4 +1,14 @@
-<figure class="w-32 relative flex items-center justify-center h-32">
+---
+import { cn } from '$lib/utils';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<figure class={cn('w-32 relative flex items-center justify-center h-32', className)}>
   <img src="/assets/coding.svg" alt="Coding sign rotated" class="absolute animate-rotate" />
   <img class="w-20 h-20 rounded-full" src="/assets/avatar.webp" alt="Franek Stodulski image" />
 </figure>

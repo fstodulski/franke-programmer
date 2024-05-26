@@ -1,6 +1,13 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "esModuleInterop": true
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "$lib/*": ["src/lib/*"],
+      "$components/*": ["src/components/*"],
+      "$containers/*": ["src/containeres/*"],
+      "$layouts/*": ["src/layouts/*"]
+    }
   }
 }

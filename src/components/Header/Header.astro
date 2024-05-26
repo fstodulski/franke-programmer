@@ -3,7 +3,7 @@ import { Icon } from '@steeze-ui/svelte-icon';
 import { ExternalLink } from '@steeze-ui/remix-icons';
 ---
 
-<header class="w-full p-4 page-content">
+<header class="w-full p-4 container print:hidden">
   <nav class="w-full p-3 justify-between flex bg-slate-(lighten)-slate-900 rounded-xl">
     <a
       class="link"
@@ -14,6 +14,10 @@ import { ExternalLink } from '@steeze-ui/remix-icons';
       Linkedin
       <Icon src={ExternalLink} size="14px" />
     </a>
-    <a class="btn" href="mailto:franek.stodulski@gmail.com">Contact Me</a>
+
+    <div class="flex gap-2">
+      <a class="link" target="_blank" href="/resume"> Resume </a>
+      <a class="btn" href="mailto:franek.stodulski@gmail.com">Contact Me</a>
+    </div>
   </nav>
 </header>
