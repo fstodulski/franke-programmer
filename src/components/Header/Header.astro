@@ -29,9 +29,17 @@ let isResume = pathname === '/resume';
       </a>
     </div>
 
-    <div class="flex gap-2">
-      <a class="link" target="_blank" href="/resume"> Resume / CV </a>
-      <a class="btn" href="mailto:franek.stodulski@gmail.com">Contact Me</a>
-    </div>
+    {
+      !isResume && (
+        <div class="flex gap-2">
+          <a class="link" target="_blank" href="/resume">
+            Resume / CV
+          </a>
+          <a class="btn" href="mailto:franek.stodulski@gmail.com">
+            Contact Me
+          </a>
+        </div>
+      )
+    }
   </nav>
 </header>

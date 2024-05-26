@@ -13,6 +13,10 @@ export const PROJECTS = [
       {
         href: 'https://flip.shop/',
         label: 'Flip.shop'
+      },
+      {
+        href: 'https://gifting.flip.shop/',
+        label: 'Gifting | Flip Shop'
       }
     ]
   },
