@@ -7,7 +7,7 @@
   <BentoTitle>📞 Contact</BentoTitle>
   <div class="grid gap-2">
     <BentoParagraph class="flex flex-wrap gap-2">
-      You are welcome to contact with me via my email:
+      You are welcome to contact me via my email:
       <a class="text-muted-foreground" href="mailto:franek.stodulski@gmail.com">
         franek.stodulski@gmail.com
       </a>

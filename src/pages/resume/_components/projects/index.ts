@@ -7,7 +7,7 @@ export const PROJECTS = [
     technologies: ['Next.js', 'Astro', 'SvelteKit', 'Angular', 'TailwindCSS', 'Shadcn', '...other'],
     description: [
       `Implementing UI for the online e-commerce shop website, landing pages, mailings, backend dashboards. (NDA).`,
-      `Leading team of 10+ (Angular / Next.js)`
+      `Leading a team of 10+ (Angular / Next.js)`
     ],
     links: [
       {
@@ -61,7 +61,7 @@ export const PROJECTS = [
       'Docker',
       '...other'
     ],
-    description: [`Side project. Simple website.`, 'GraphCMS backend', 'Designed by my'],
+    description: [`Side project. Simple website.`, 'GraphCMS backend', 'Designed by me'],
     links: [
       {
         href: 'https://farmrentacar.com/',
@@ -75,7 +75,7 @@ export const PROJECTS = [
     technologies: ['SvelteKit', 'TypeScript', 'Tailwindcss', 'Solidity', 'Web3', 'Eth', '...other'],
     description: [
       `Application built from ground up. `,
-      `Side project for NFTs`,
+      `A side project for NFTs`,
       `Implemented smart contract in Solidity`,
       `Integration UI with Metamask wallet`,
       `Project Died`
@@ -93,7 +93,7 @@ export const PROJECTS = [
     technologies: ['Angular', 'Next.js', '...other'],
     description: [
       `Implementing UI for the clients projects. (NDA).`,
-      `Leading team of 6 developers`,
+      `Leading a team of 6 developers`,
       `Consulting during meetings with new, potential clients.`,
       `Member of Recruitmend Team`,
       `Created Frontend recruitment task`,
