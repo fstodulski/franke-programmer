@@ -13,7 +13,7 @@
     <img
       class="z-[1] size-40 rounded-full print:size-20"
       src="/assets/avatar.webp"
-      alt="Franek Stodulski image"
+      alt="Franek Stodulski"
     />
   </div>
 </section>

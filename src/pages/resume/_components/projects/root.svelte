@@ -19,7 +19,7 @@
           <BentoParagraph>{role}</BentoParagraph>
         </div>
 
-        <div class="grid gap-2 print:flex print:items-center">
+        <div class="grid gap-2 print:flex print:items-start">
           <span class="text-sm text-muted-foreground">Technologies:</span>
           <div class="flex flex-wrap gap-2">
             {#each technologies as technology}
@@ -37,7 +37,7 @@
           {/each}
         </div>
 
-        <div class="grid print:flex print:items-center">
+        <div class="grid print:flex print:items-center print:gap-2">
           <span class="text-sm text-muted-foreground print:text-xs">
             You can check some of them online
           </span>
