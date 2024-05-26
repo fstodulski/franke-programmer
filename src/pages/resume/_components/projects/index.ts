@@ -97,8 +97,16 @@ export const PROJECTS = [
     ],
     links: [
       {
-        href: 'https://flip.shop/',
+        href: 'https://bankjoy.com',
         label: 'Bankjoy'
+      },
+      {
+        href: 'https://www.netguru.com/clients/software-for-medical-professionals',
+        label: 'ASPIT'
+      },
+      {
+        href: 'https://www.netguru.com/clients/keller-williams-digital-transformation',
+        label: 'Keller Williams'
       }
     ]
   },

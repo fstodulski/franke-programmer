@@ -41,15 +41,19 @@
           <span class="text-sm text-muted-foreground print:text-xs">
             You can check some of them online
           </span>
-          <BentoParagraph class="flex gap-2">
+          <BentoParagraph class="flex gap-3">
             {#each links as link}
-              <a href={link.href} target="_blank">{link.label}</a>
+              <a
+                href={link.href}
+                class="duration-300 hover:text-muted-foreground hover:underline"
+                target="_blank">{link.label}</a
+              >
             {/each}
           </BentoParagraph>
         </div>
       </li>
 
-      <div class="h-1 w-full bg-background/10"></div>
+      <div class="h-1 w-full bg-background/10 last-of-type:hidden"></div>
     {/each}
   </ul>
 </BentoCard>
