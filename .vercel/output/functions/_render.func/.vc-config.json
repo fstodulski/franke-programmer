@@ -1,6 +1,7 @@
 {
 	"runtime": "nodejs20.x",
-	"handler": "entry.mjs",
+	"handler": ".vercel/output/_functions/entry.mjs",
 	"launcherType": "Nodejs",
+	"maxDuration": 8,
 	"supportsResponseStreaming": true
 }

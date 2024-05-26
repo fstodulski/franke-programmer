@@ -17,7 +17,7 @@ export default defineConfig({
         forward: ['dataLayer.push'],
         resolveUrl: (url) => {
           const PROXY_MAP = {
-            'analytics.tiktok.com': 'd2bfcjczgrpfbj.cloudfront.net', // tiktok has to have proxy
+            'analytics.tiktok.com': 'd2bfcjczgrpfbj.cloudfront.net' // tiktok has to have proxy
           };
 
           url.hostname = PROXY_MAP[url.hostname] || url.hostname;
@@ -28,5 +28,10 @@ export default defineConfig({
     })
   ],
   output: 'server',
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true
+    },
+    maxDuration: 8
+  })
 });
