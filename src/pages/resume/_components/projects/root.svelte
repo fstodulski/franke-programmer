@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { sendCustomEvent } from './../../../../lib/gtag.ts';
   import { PROJECTS } from '.';
   import { Badge } from '$lib/components/badge';
   import { BentoCard, BentoTitle, BentoParagraph } from '$components/bento';
@@ -50,6 +51,9 @@
             {#each links as link}
               <a
                 href={link.href}
+                on:click={() => {
+                  sendCustomEvent('click', 'project_link', 'project', link.label);
+                }}
                 class="duration-300 hover:text-muted-foreground hover:underline"
                 target="_blank">{link.label}</a
               >
