@@ -138,7 +138,7 @@ export const PROJECTS = [
   },
   {
     name: '✈️ NetTeam Solutions - Givt',
-    type: 'contract',
+    type: 'contract - project closed',
     role: 'Angular Frontend Developer',
     technologies: ['Angular', 'NgRx', 'TypeScript', '...other'],
     description: [
@@ -148,7 +148,7 @@ export const PROJECTS = [
     ],
     links: [
       {
-        href: 'https://givt.com/en/',
+        href: 'https://www.facebook.com/givtcompl/',
         label: 'Givt.com'
       }
     ]
