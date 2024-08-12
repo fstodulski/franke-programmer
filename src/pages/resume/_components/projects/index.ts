@@ -46,7 +46,7 @@ export const PROJECTS = [
     ],
     links: [
       {
-        href: 'https://www.pqmsa.com',
+        href: '#',
         label: 'Proqual - PQMSA'
       }
     ]
